@@ -20,7 +20,7 @@ $zip =  $_POST['zip'];
 $email =  $_POST['email'];
 $phone =  $_POST['phone'];
 
-$sql = "INSERT INTO customers (firstname, lastname, address, city, state, zip, email, phone) VALUES ($fname, $lname, $address, $city, $state, $zip, $email, $phone)";
+$sql = "INSERT INTO customers (firstname, lastname, address, city, state, zip, email, phone) VALUES ('$fname', '$lname', '$address', '$city', '$state', '$zip', '$email', '$phone')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
