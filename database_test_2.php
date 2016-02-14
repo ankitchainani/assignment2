@@ -34,5 +34,9 @@ for ($j = 0 ; $j < $rows ; ++$j)
 
 $result->close();
 $conn->close();
+<<<<<<< HEAD
 ?>
  
+=======
+?>
+>>>>>>> 73419b14cddc33cf9947cca4250ec2f37173ad2c
