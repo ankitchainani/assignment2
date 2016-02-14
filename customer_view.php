@@ -1,48 +1,29 @@
-<!-- View the lsit of added customers -->
+<!-- View the list of added customers -->
 <!DOCTYPE html>
-
 <html>
-	<head>
-		
-		
-		<title>View Customer List</title>
-		<meta name="description" content="table">
-		
-		<!-- Mobile viewport optimized -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		
-		<!-- Bootstrap CSS -->
-		<link href=".css/bootstrap.min.css" rel="stylesheet">
+<head>
+  <title>Customer Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src=""></script>
+  <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
 
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="navbar navbar-fixed-top">
-				<div class="container">
-				  <!--Navbar added-->  
-					
-					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				
-					<a class="navbar-brand" href="#">Assignment2</a>
-					
-					<div class="nav-collapse collapse navbar-responsive-collapse">
-						<ul class="nav navbar-nav">
-							<li class="active">
-								<a href="#">View</a>
-							</li>
-							<li>
-								<a href="customer_add.html">Add</a>
-							</li>
-						</ul>
-					</div>											
-				</div>
-			</div>
-
-<!--Navbar ended-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Assignment 2</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="customer_view.php">View</a></li>
+      <li><a href="customer_add.html">Add</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<!-- Navbar ended -->
 
 			<div class="container">
 				<div class="row" style="margin-top:80px">
@@ -50,7 +31,7 @@
 						<h2>View Customer List</h2>
 						<!-- create a bootstrap table -->
 							<div class="table-responsive">
-							  <table class="table table-striped">
+							  <table class="table table-hover">
 							    <tr>
 							    	<th>First Name</th>
 							    	<th>Last Name</th>
@@ -62,7 +43,7 @@
 							    	<th>Phone</th>
 							    </tr>
 
-							    <?php // query.php
+							 <?php // query.php
 
 										// require_once 'login.php';
 
@@ -100,9 +81,8 @@
 										$conn->close();
 								?>
 
-
 							 </table>
-						</div><
+						</div>
 					</div> 
 				</div>
 			</div> 
@@ -110,7 +90,9 @@
 		</div>
 
 	<!-- Bootstrap JS -->
-	<script src=".js/bootstrap.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/npm.js"></script>
+	<script src="./js/bootstrap.js"></script>
 	
 	</body>
 </html>
