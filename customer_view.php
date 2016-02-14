@@ -1,4 +1,4 @@
-<!-- Customer View Page -->
+<!-- View the lsit of added customers -->
 <!DOCTYPE html>
 
 <html>
@@ -12,15 +12,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		
 		<!-- Bootstrap CSS -->
-		<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href=".css/bootstrap.min.css" rel="stylesheet">
 
 	</head>
 	<body>
 		<div class="container-fluid">
 			<div class="navbar navbar-fixed-top">
 				<div class="container">
+				  <!--Navbar added-->  
 					
-					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
 					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -39,15 +39,15 @@
 							</li>
 						</ul>
 					</div>											
-				</div><!-- end container -->
-			</div><!-- end navbar -->
+				</div>
+			</div>
 
-
+<!--Navbar ended-->
 
 			<div class="container">
 				<div class="row" style="margin-top:80px">
 					<div class="col-sm-12">
-						<h2>Add a Customer</h2>
+						<h2>View Customer List</h2>
 						<!-- create a bootstrap table -->
 							<div class="table-responsive">
 							  <table class="table table-striped">
@@ -101,16 +101,16 @@
 								?>
 
 
-							 </table><!-- end table -->
-						</div><!-- end table-responsive -->
-					</div> <!-- End col -->
-				</div>	<!-- end row -->
-			</div> <!-- End of Container -->
+							 </table>
+						</div><
+					</div> 
+				</div>
+			</div> 
 
-		</div><!-- end container-fluid -->
+		</div>
 
 	<!-- Bootstrap JS -->
-	<script src="dist/js/bootstrap.min.js"></script>
+	<script src=".js/bootstrap.min.js"></script>
 	
 	</body>
 </html>
